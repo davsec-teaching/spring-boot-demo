@@ -31,6 +31,6 @@ public class MyController {
      */
     @PostMapping("/sayhello")
     public String sayHello(@RequestBody MyRequest request) {
-        return "";
+        return "You said: " + request.getPostContent();
     }
 }
