@@ -36,6 +36,6 @@ public class MyController {
 
     @GetMapping("/greeting")
     public String greeting(@RequestParam(value = "name", defaultValue = "ECS 160") String name) {
-        return String.format("Hello and good morning, %s!", name);
+        return String.format("Hello and goodbye, %s!", name);
     }
 }
